@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta:__legacy__"
+
+[project]
+name = "nexus-ai"
+version = "0.1.0"
+description = "NEXUS: Neural EXplicit Understanding System - A new AI architecture beyond LLMs"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "jdenisthebest-byte"}
+]
+
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "ruff>=0.4.0",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini]
+testpaths = ["tests"]
